@@ -9,8 +9,29 @@
 
 </head>
 <body>
+	<div id="menu">
+		<ul id="menu-list">
+			<div class="menu-close" title="Close Menu" onclick="menuClose()">
+				<i class="fa fa-bars"></i>
+			</div>
+			<li class="active-menu"><a href="index.html">Home</a></li>
+			<li><a href="reviews.html">Reviews</a></li>
+			<li><a href="glossary.html">Glossary</a></li>
+			<li><a href="jobs.html">Jobs</a></li>
+			<li><a href="tutorials.html">Tutorials</a></li>
+			<div class="social">
+				<a href="#"><span class="fab fa-facebook"></span></a>
+				<a href="#"><span class="fab fa-twitter"></span></a>
+				<a href="#"><span class="fab fa-instagram"></span></a>
+				<a href="#"><span class="fab fa-pinterest"></span></a>
+			</div>
+		</ul>
+	</div>
 	<header>
 		<div class="top-info container">
+			<div class="menu-open" title="Open Menu" onclick="menuOpen()">
+				<i class="fa fa-bars"></i>
+			</div>
 			<div class="social">
 				<a href="#"><span class="fab fa-facebook"></span></a>
 				<a href="#"><span class="fab fa-twitter"></span></a>
@@ -84,19 +105,19 @@
 					<form action="jobs.html" method="POST">
 						<div class="contact-field">
 							<label>Name</label>
-							<input class="material-input" type="text" name="name" autocomplete="off" required>
+							<input class="material-input" type="text" name="name" autocomplete="off" onblur="validate(this)" required>
 						</div>
 						<div class="contact-field">
 							<label>Email</label>
-							<input class="material-input" type="email" name="email" autocomplete="off" required>
+							<input class="material-input" type="email" name="email" autocomplete="off" onblur="validate(this)" required>
 						</div>
 						<div class="contact-field">
 							<label>Phone Number</label>
-							<input class="material-input" type="number" name="number" autocomplete="off" required>
+							<input class="material-input" type="number" name="number" autocomplete="off" onblur="validate(this)" required>
 						</div>
 						<div class="contact-field">
 							<label>Message</label>
-							<textarea class="material-input" name="message" rows="5" required></textarea>
+							<textarea class="material-input" name="message" rows="5" onblur="validate(this)" required></textarea>
 						</div>
 						<div class="contact-field">
 							<input class="material-button" type="submit" name="submit" value="Send">

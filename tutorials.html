@@ -9,8 +9,29 @@
 
 </head>
 <body>
+	<div id="menu">
+		<ul id="menu-list">
+			<div class="menu-close" title="Close Menu" onclick="menuClose()">
+				<i class="fa fa-bars"></i>
+			</div>
+			<li class="active-menu"><a href="index.html">Home</a></li>
+			<li><a href="reviews.html">Reviews</a></li>
+			<li><a href="glossary.html">Glossary</a></li>
+			<li><a href="jobs.html">Jobs</a></li>
+			<li><a href="tutorials.html">Tutorials</a></li>
+			<div class="social">
+				<a href="#"><span class="fab fa-facebook"></span></a>
+				<a href="#"><span class="fab fa-twitter"></span></a>
+				<a href="#"><span class="fab fa-instagram"></span></a>
+				<a href="#"><span class="fab fa-pinterest"></span></a>
+			</div>
+		</ul>
+	</div>
 	<header>
 		<div class="top-info container">
+			<div class="menu-open" title="Open Menu" onclick="menuOpen()">
+				<i class="fa fa-bars"></i>
+			</div>
 			<div class="social">
 				<a href="#"><span class="fab fa-facebook"></span></a>
 				<a href="#"><span class="fab fa-twitter"></span></a>
@@ -150,7 +171,7 @@
 		
 	</aside>
 	<footer>
-		
+		<script type="text/javascript" src="script.js"></script>
 	</footer>
 </body>
 </html>
