@@ -6,13 +6,13 @@
 	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
 <body>
 	<div id="menu">
 		<ul id="menu-list">
 			<div class="menu-close" title="Close Menu" onclick="menuClose()">
-				<i class="fa fa-bars"></i>
+				<div class="menu-icon">&#9776;</div>
 			</div>
 			<li class="active-menu"><a href="index.html">Home</a></li>
 			<li><a href="reviews.html">Reviews</a></li>
@@ -30,7 +30,7 @@
 	<header>
 		<div class="top-info container">
 			<div class="menu-open" title="Open Menu" onclick="menuOpen()">
-				<i class="fa fa-bars"></i>
+				<div class="menu-icon">&#9776;</div>
 			</div>
 			<div class="social">
 				<a href="#"><span class="fab fa-facebook"></span></a>
@@ -38,8 +38,10 @@
 				<a href="#"><span class="fab fa-instagram"></span></a>
 				<a href="#"><span class="fab fa-pinterest"></span></a>
 			</div>
-			<span class="far fa-calendar-alt"></span>
-			<iframe src="http://free.timeanddate.com/clock/i6q4o3ac/n117/tlnp/fs18/ahr/tt1/tw0" frameborder="0" width="110" height="23"></iframe>
+			<div class="date">
+				<span class="calendar-icon">&#128197;</span>
+				<span id="date"></span>
+			</div>
 		</div>
 		<div class="head">
 			<div id="logo" title="The Nami Times">The Nami Times</div>
@@ -117,7 +119,7 @@
 							<div class="podcast-player">
 								<div class="podcast-title">This news site will change the way you see news.</div>
 								<audio controls>
-									<source src="podcasts/podcast1.mp3" type="audio/mpeg">
+									<source src="podcasts/podcast.mp3" type="audio/mpeg">
 									Your browser does not support the audio tag.
 								</audio>
 							</div>
@@ -132,7 +134,7 @@
 							<div class="podcast-player">
 								<div class="podcast-title">This news site will change the way you see news.</div>
 								<audio controls>
-									<source src="podcasts/podcast1.mp3" type="audio/mpeg">
+									<source src="podcasts/podcast.mp3" type="audio/mpeg">
 									Your browser does not support the audio tag.
 								</audio>
 							</div>
@@ -147,7 +149,7 @@
 							<div class="podcast-player">
 								<div class="podcast-title">This news site will change the way you see news.</div>
 								<audio controls>
-									<source src="podcasts/podcast1.mp3" type="audio/mpeg">
+									<source src="podcasts/podcast.mp3" type="audio/mpeg">
 									Your browser does not support the audio tag.
 								</audio>
 							</div>

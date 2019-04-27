@@ -6,13 +6,13 @@
 	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
 <body>
 	<div id="menu">
 		<ul id="menu-list">
 			<div class="menu-close" title="Close Menu" onclick="menuClose()">
-				<i class="fa fa-bars"></i>
+				<div class="menu-icon">&#9776;</div>
 			</div>
 			<li class="active-menu"><a href="index.html">Home</a></li>
 			<li><a href="reviews.html">Reviews</a></li>
@@ -30,7 +30,7 @@
 	<header>
 		<div class="top-info container">
 			<div class="menu-open" title="Open Menu" onclick="menuOpen()">
-				<i class="fa fa-bars"></i>
+				<div class="menu-icon">&#9776;</div>
 			</div>
 			<div class="social">
 				<a href="#"><span class="fab fa-facebook"></span></a>
@@ -38,8 +38,10 @@
 				<a href="#"><span class="fab fa-instagram"></span></a>
 				<a href="#"><span class="fab fa-pinterest"></span></a>
 			</div>
-			<span class="far fa-calendar-alt"></span>
-			<iframe src="http://free.timeanddate.com/clock/i6q4o3ac/n117/tlnp/fs18/ahr/tt1/tw0" frameborder="0" width="110" height="23"></iframe>
+			<div class="date">
+				<span class="calendar-icon">&#128197;</span>
+				<span id="date"></span>
+			</div>
 		</div>
 		<div class="head">
 			<div id="logo" title="The Nami Times">The Nami Times</div>
@@ -62,7 +64,158 @@
 	</header>
 	<section>
 		<div class="glossary-section container">
-				<div class="section-title">Glossary</div>
+			<div class="section-title">Glossary</div>
+			<div class="glossary-container">
+				<div class="table-of-content container">
+					<div class="section-title-small">Table of Contents</div>
+					<a href="#html">HTML/HTML5</a>
+					<a href="#css">CSS/CSS3</a>
+					<a href="#javascript">Javascript</a>
+					<a href="#responsive">Responsive Design</a>
+					<a href="#material">Material Design</a>
+					<a href="#parallax">Parallax Scrolling</a>
+				</div>
+				<div class="glossary-list">
+					<div id="html" class="glossary-content container">
+						<div class="section-title-small">HTML/HTML5</div>
+						<div class="glossary">
+							<div class="glossary-image">
+								<img src="images/html5.png">
+							</div>
+							<div class="glossary-info">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+					<div id="css" class="glossary-content container">
+						<div class="section-title-small">CSS/CSS3</div>
+						<div class="glossary">
+							<div class="glossary-image">
+								<img src="images/css3.png">
+							</div>
+							<div class="glossary-info">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+					<div id="javascript" class="glossary-content container">
+						<div class="section-title-small">JavaScript</div>
+						<div class="glossary">
+							<div class="glossary-image">
+								<img src="images/js.png">
+							</div>
+							<div class="glossary-info">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+					<div id="responsive" class="glossary-content container">
+						<div class="section-title-small">Responsive Design</div>
+						<div class="glossary">
+							<div class="glossary-image">
+								<img src="images/responsive.png">
+							</div>
+							<div class="glossary-info">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+					<div id="material" class="glossary-content container">
+						<div class="section-title-small">Material Design</div>
+						<div class="glossary">
+							<div class="glossary-image">
+								<img src="images/material.png">
+							</div>
+							<div class="glossary-info">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+					<div id="parallax" class="glossary-content container">
+						<div class="section-title-small">Parallax Scrolling</div>
+						<div class="glossary">
+							<div class="glossary-image">
+								<img src="images/parallax.png">
+							</div>
+							<div class="glossary-info">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<aside>

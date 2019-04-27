@@ -13,3 +13,7 @@ function menuOpen(){
 function menuClose(){
 	menu.style.transform = "translate(-120vw,0)";
 }
+
+var fullDate = new Date();
+var date = (fullDate+"").slice(4,15);
+document.getElementById('date').innerHTML = date;

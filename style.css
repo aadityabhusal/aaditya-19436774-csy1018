@@ -44,8 +44,12 @@ textarea{
 	resize: vertical;
 }
 
+.date{
+	font-size: 18px;
+}
+
 .description{
-	font-size: 16px;
+	font-size: 18px;
 	margin: 20px 0;
 	line-height: 1.5;
 }
@@ -85,7 +89,10 @@ textarea{
 	cursor: pointer;
 	padding: 0px 10px;
 	display: none;
+	transform: scale(1.5, 1);
+	width: 22px;
 }
+
 .menu-close{
 	margin-bottom: 50px;
 	margin-top: 5px;
@@ -93,8 +100,12 @@ textarea{
 
 
 #menu .social{
-	margin-top: 50px;
-	margin-left: 25px;
+	margin-top: 45px;
+	margin-left: 45px;
+}
+
+#menu .social a{
+	font-size: 28px;
 }
 
 .scale img{
@@ -102,7 +113,7 @@ textarea{
 }
 
 .scale:hover img{
-	transform: scale(1.1);
+	transform: scale(1.05);
 	opacity: 1!important;
 }
 
@@ -116,10 +127,10 @@ textarea{
 	border-bottom: 1px solid #bdc3c7;
 }
 
-.fa-calendar-alt{
-	font-size: 20px;
-	margin-right: 5px;
-	color: #7f8c8d;
+.calendar-icon{
+	margin-right: 10px;
+	font-size: 18px;
+	vertical-align: top;
 }
 
 .social{
@@ -190,6 +201,8 @@ nav ul{
 
 nav li{
 	flex: 1;
+	-webkit-flex: 1;  /* For Safari*/
+	-ms-flex: 1;  /* For IE*/ 
 	text-align: center;
 	transition: 0.3s ease;
 }
@@ -211,10 +224,12 @@ nav .active{
 
 .top-section{
 	display: flex;
+	margin-bottom: 30px;
 }
 
 .top-main{
 	width: 60%;
+	overflow: hidden;
 }
 
 .section-title,.section-title-small{
@@ -234,7 +249,7 @@ nav .active{
 
 .popular-image{
 	/*flex: 0 0 200px;*/
-	max-width: 44%;
+	width: 40%;
 	overflow: hidden;
 }
 
@@ -244,13 +259,14 @@ nav .active{
 
 .popular-info{
 	margin-left: 10px;
+	width: 60%;
 }
 
 .popular-title,.middle-title{
 	font-size: 18px;
 	margin-bottom: 5px;
 	font-weight: 900;
-	height: 48px;
+	height: 46px;
 	overflow: hidden;
 }
 
@@ -278,7 +294,7 @@ nav .active{
 	bottom: 0;
 	color: #FFFFFF;
 	padding: 40px 20px;
-	box-shadow: inset 0px -50px 100px 20px rgba(0,0,0,0.8);
+	background: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,1));
 	box-sizing: border-box;
 }
 
@@ -292,30 +308,28 @@ nav .active{
 	font-size: 24px;
 }
 
-.top-main-banner{
-	width: 100%;
-	margin: 10px 0;
-	border-radius: 3px;
-}
-
-.top-main-banner img{
-	width: 100%;
-}
 
 .middle-section{
-	
+	display: flex;
+}
+
+.middle-container{
+	width: 60%;
 }
 
 .middle-section-content{
 	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .middle{
-	padding: 10px;
-	flex: 1;
-	overflow: hidden;
+	flex: 0 0 45%;
+	-webkit-flex: 0 0 45%;  /* For Safari*/
+	-ms-flex: 0 0 45%;  /* For IE*/ 
 	border-radius: 5px;
 	font-size: 0;
+	margin-bottom: 30px;
 }
 
 .middle-image{
@@ -332,12 +346,58 @@ nav .active{
 	background: rgba(128,128,128,0.08);
 	padding: 10px;
 	border-radius: 0 0 5px 5px;
-	box-shadow: 0 3px 15px -3px rgba(0,0,0,0.4)
+	transition: 0.3s ease;
+	border: 1px solid rgba(128,128,128,0.5);
+	box-shadow: 0 3px 15px -3px rgba(0,0,0,0.4);
+}
+
+.middle:hover .middle-info,.tutorial:hover .middle-info{
+	box-shadow: none;
 }
 
 .middle-author{
 	font-size: 16px;
 }
+
+.category-section{
+	width: 40%;
+}
+
+.category-list{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0 100px 0 10px;
+}
+
+.category{
+	margin-bottom: 20px;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	flex: 0 0 45%;
+	-webkit-flex: 0 0 45%;  /* For Safari*/
+	-ms-flex: 0 0 45%;  /* For IE*/ 
+}
+
+.category-image img{
+	width: 100%;
+}
+
+.category-name{
+	position: absolute;
+	color: white;
+	font-family: ABeeZee;
+	font-size: 20px;
+	bottom: 0;
+	padding: 15px 0;
+	background: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,1));
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
 
 
 .reviews-section{
@@ -378,6 +438,7 @@ nav .active{
 	margin-left: 20px;
 	font-family: Karla;
 	width: 80%;
+	font-size: 18px;
 }
 
 .review-description,.podcast-player{
@@ -404,12 +465,16 @@ nav .active{
 
 .comparison-head>div:nth-child(n+1),.job-row>div:nth-child(n+1){
 	flex: 2;
+	-webkit-flex: 2;  /* For Safari*/
+	-ms-flex: 2;  /* For IE*/ 
 	padding: 15px 10px;
 	box-sizing: border-box;
 }
 
 .comparison-head>div:nth-child(1),.job-row>div:nth-child(1){
 	flex: 1;
+	-webkit-flex: 1;  /* For Safari*/
+	-ms-flex: 1;  /* For IE*/ 
 	background: #f5f6fa;
 	min-width: 20%;
 	/*word-break:break-all;*/
@@ -479,6 +544,8 @@ nav .active{
 .tutorial{
 	padding: 5px 20px;
 	margin-bottom: 50px;
+	font-size: 0px;
+	cursor: pointer;
 }
 
 .tutorial iframe{
@@ -488,6 +555,55 @@ nav .active{
 
 }
 
+.glossary-container{
+	display: flex;
+	margin: 30px 0;
+}
+
+.table-of-content{
+	display: flex;
+	flex-direction: column;
+	min-width: 200px;
+
+/*	position: -webkit-sticky;
+	position: sticky;
+	min-width: 200px;
+	align-self: flex-start;
+	top: 0;*/
+
+}
+
+.table-of-content a{
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.glossary-list{
+	flex: 1;
+	-webkit-flex: 1;  /* For Safari*/
+	-ms-flex: 1;  /* For IE*/ 
+}
+
+.glossary{
+	display: flex;
+	border-bottom: 3px solid #ecf0f1;
+	padding: 20px 0;
+}
+
+.glossary-image{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.glossary-image img{
+    width: 100%;
+}
+
+.glossary-info{
+	margin-left: 30px;
+	font-size: 18px;
+	line-height: 1.5;
+}
 
 
 
@@ -517,6 +633,7 @@ nav .active{
 	.top-main{
 		width: 100%;
 		box-sizing: border-box;
+		margin-bottom: 30px;
 	}
 
 	.top-side{
@@ -524,15 +641,17 @@ nav .active{
 		box-sizing: border-box;
 	}
 	
-	.popular-content,.middle-section-content{
+	.popular-content{
 		display: flex;
+		justify-content: space-around;
 		flex-wrap: wrap;
 	}
 
-	.popular,.middle{
-		flex: 0 0 50%;
-		padding: 10px;
-		box-sizing: border-box;
+	.popular{
+		flex: 0 0 45%;
+		-webkit-flex: 0 0 45%;  /* For Safari*/
+		-ms-flex: 0 0 45%;  /* For IE*/
+		margin-bottom: 30px; 
 	}
 
 	.popular a{
@@ -541,12 +660,32 @@ nav .active{
 
 	.popular-image{
 		/*flex: 0 0 200px;*/
-		max-width: 100%;
+		width: 100%;
 		margin-bottom: 10px;
 	}
 
 	.popular-info{
 		margin-left: 0;
+		width: 100%;
+	}
+
+	.middle-section{
+		flex-direction: column;
+	}
+
+	.middle-container,.category-section{
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.category-list{
+		padding: 0;
+	}
+
+	.category{
+		flex: 0 0 21%;
+		-webkit-flex: 0 0 21%;  /* For Safari*/
+		-ms-flex: 0 0 21%;  /* For IE*/ 
 	}
 
 	.tutorial-list{
@@ -561,9 +700,21 @@ nav .active{
     	padding-left: 20px;
 	}
 
-
 	.reviews-section {
 	    grid-template-columns: 100%;
+	}
+
+	.glossary{
+		flex-direction: column;
+		padding: 0 20px;
+	}
+
+	.glossary-image{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.glossary-info {
+    	margin: 20px 0;
 	}
 
 }
@@ -581,6 +732,10 @@ nav .active{
 	.menu-open,.menu-close{
 		display: block;
 	}
+	
+	#menu .active{
+		color: #3498db!important;
+	}
 
 	nav{
 		display: none;
@@ -588,7 +743,7 @@ nav .active{
 
 	.head{
 		box-shadow: 0 3px 15px -3px rgba(0,0,0,0.3);
-		padding-top: 70px;
+		padding-top: 100px;
 	}
 	
 	.top-info{
@@ -597,12 +752,15 @@ nav .active{
 		background: #FFFFFF;
 		width: 100%;
 		box-sizing: border-box;
-		padding: 15px;
 		box-shadow: 0 3px 10px -3px rgba(0,0,0,0.3);
+		justify-content: flex-start;
 	}
 
 	.top-info .social {
     	display: none; 
+	}
+	.date{
+		margin-top: 7px;
 	}
 
 	#logo{
@@ -639,6 +797,14 @@ nav .active{
 
 	.popular, .middle {
     	flex: 0 0 100%;
+    	-webkit-flex: 0 0 100%;  /* For Safari*/
+		-ms-flex: 0 0 100%;  /* For IE*/
+	}
+
+	.category{
+		flex: 0 0 45%;
+		-webkit-flex: 0 0 45%;  /* For Safari*/
+		-ms-flex: 0 0 45%;  /* For IE*/ 
 	}
 
 	.tutorial-list{
@@ -676,6 +842,19 @@ nav .active{
 
 	.reviews, .podcasts,.tutorial,.contact, .map {
     	padding: 0;
+	}
+
+	.table-of-content{
+		position: static;
+		margin-bottom: 50px;
+	}
+
+	.glossary-container{
+		display: block;
+	}
+
+	.glossary-list{
+		margin-left: 0;
 	}
 
 }
