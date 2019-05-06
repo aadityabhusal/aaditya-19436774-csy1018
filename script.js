@@ -17,3 +17,6 @@ function menuClose(){
 var fullDate = new Date();
 var date = (fullDate+"").slice(4,15);
 document.getElementById('date').innerHTML = date;
+
+var copyrightDate = new Date().getFullYear();
+document.getElementById('copyright-year').innerHTML = copyrightDate;

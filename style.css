@@ -606,6 +606,37 @@ nav .active{
 }
 
 
+footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border-top: 1px solid #bdc3c7;
+}
+
+.footer-logo{
+	font-family: Old English Text MT;
+	font-size: 40px;
+	user-select: none;
+	margin-right: 20px;
+}
+
+.copyright{
+	margin-top: 10px;
+}
+
+.footer-list{
+	padding: 15px 0;
+}
+
+.footer-list ul{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer-list li{
+	margin-right: 50px;
+}
+
 
 
 
@@ -715,6 +746,19 @@ nav .active{
 	}
 	.glossary-info {
     	margin: 20px 0;
+	}
+
+	footer{
+		flex-direction: column;
+		text-align: center;
+		padding: 20px 5px;
+	}
+	.footer-list ul{
+		justify-content: space-around;
+	}
+
+	.footer-list li{
+		margin-right: 0px;
 	}
 
 }
