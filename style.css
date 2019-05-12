@@ -1,59 +1,63 @@
+/*body Styling*/
 body{
-	/*background: #ecf0f1;*/
 	margin: 0;
 	padding: 0;
 	font-family: Karla, sans-serif;
 }
-
+/*H2 Styling*/
+h2{
+	font-weight: normal;
+}
+/*ul Styling*/
 ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-
+/*anchor Styling*/
 a{
 	text-decoration: none;
 	color: #000000;
 	transition: 0.2s ease;
 }
-
+/*a hover Styling*/
 a:hover{
 	color:#3498db; 
 }
-
+/*header Styling*/
 header{
 	margin-bottom: 10px;
 }
-
+/*audio Styling*/
 audio{
 	width: 100%;
 }
-
+/*section Styling*/
 section{
 	padding: 20px 10px;
 }
-
+/*input Styling*/
 input,textarea{
 	border: none;
 	outline: 0;
 	font-size: 16px;
 	font-family: Karla;
 }
-
+/*textarea Styling*/
 textarea{
 	resize: vertical;
 }
-
+/*date styling*/
 .date{
 	font-size: 18px;
 }
-
+/*site description Styling*/
 .description{
 	font-size: 18px;
 	margin: 20px 0;
 	line-height: 1.5;
 }
-
+/*menu styling*/
 #menu{
 	position: fixed;
 	width: 100vw;
@@ -62,7 +66,7 @@ textarea{
 	z-index: 100;
 	transition: 0.5s ease;
 }
-
+/*menu list styling*/
 #menu-list{
 	width: 100%;
 	height: 100%;
@@ -82,7 +86,7 @@ textarea{
 	display: block;
 	padding: 20px;
 }
-
+/*menu open and close styling*/
 .menu-open,.menu-close{
 	margin-right: auto;
 	font-size: 24px;
@@ -98,16 +102,20 @@ textarea{
 	margin-top: 5px;
 }
 
-
+/*menu social styling*/
 #menu .social{
-	margin-top: 45px;
+	margin-top: 15px;
 	margin-left: 45px;
 }
 
 #menu .social a{
-	font-size: 28px;
+	width: 30px;
 }
 
+#menu .social a img{
+	width: 100%;
+}
+/*scale styling*/
 .scale img{
 	transition: 0.5s ease transform;
 }
@@ -116,81 +124,86 @@ textarea{
 	transform: scale(1.05);
 	opacity: 1!important;
 }
-
+/*main container styling*/
 .container{
 	padding: 10px;
 }
-
+/*top info styling*/
 .top-info{
 	display: flex;
 	justify-content: flex-end;
 	border-bottom: 1px solid #bdc3c7;
 }
-
+/*calender styling*/
 .calendar-icon{
 	margin-right: 10px;
 	font-size: 18px;
 	vertical-align: top;
 }
-
+/*social styling*/
 .social{
 	margin-right: 30px;
+	display: flex;
 }
 
 .social a{
 	margin-right: 20px;
-	font-size: 20px;
+	width: 20px;
 }
 
+.social a img{
+	width: 100%;
+}
+/*head section styling*/
 .head{
 	display: flex;
 	justify-content: space-around;
 	padding: 20px;
 	border-bottom: 1px solid #bdc3c7;
 }
-
+/*logo styling*/
 #logo{
-	font-family: Old English Text MT;
+	font-family: "Old English Text MT";
 	font-size: 72px;
 	user-select: none;
 }
-
+/*search styling*/
 .search{
 	margin: auto 0;
 	margin-left: 18px;
 }
-
+/*search form styling*/
 .search-form{
 	display: flex;
 	height: 45px;
 	border-radius: 3px;
 	overflow: hidden;
 }
-
+/*search form input styling*/
 .search-form input{
 	height: 100%;
 	box-sizing: border-box;
 	padding: 0 16px;
 }
-
+/*searchtext styling*/
 .searchtext{
 	width: 400px;
 	background: #ecf0f1;
 }
-
+/*searchbutton styling*/
 .searchbutton{
 	cursor: pointer;
 	font-size: 20px!important;
 	background: #ecf0f1;
 }
-
+/*nav styling*/
 nav{
 	display: flex;
 	justify-content: center;
 	border-bottom: 1px solid #bdc3c7;
 	box-shadow: 0 3px 15px -3px  rgba(0,0,0,0.3); 
 }
-
+/*nav ul styling*/
 nav ul{
 	display: flex;
 	justify-content: space-around;
@@ -198,11 +211,9 @@ nav ul{
 	line-height: 47px;
 	width: 90%;
 }
-
+/*nav li styling*/
 nav li{
 	flex: 1;
-	-webkit-flex: 1;  /* For Safari*/
-	-ms-flex: 1;  /* For IE*/ 
 	text-align: center;
 	transition: 0.3s ease;
 }
@@ -210,45 +221,55 @@ nav li{
 nav li:hover{
 	border-bottom: 3px solid #3498db;
 }
-
+/*nav a styling*/
 nav a{
 	display: block;
 	font-size: 24px;
-	font-family: ABeeZee;
+	font-family: ABeeZee, sans-serif;
 	box-sizing: border-box;
 }
-
+/*nav active class styling*/
 nav .active{
 	border-bottom: 3px solid #3498db;
 }
-
+/*sites purpose styling*/
+#sites-purpose{
+	font-size: 18px;
+	font-family: ABeeZee, sans-serif;
+	line-height: 2;
+	width: 80%;
+	margin: 20px auto;
+	text-align: center;
+	background: #ecf0f1;
+	padding: 25px;
+}
+/*top section styling*/
 .top-section{
 	display: flex;
 	margin-bottom: 30px;
 }
-
+/*top main styling*/
 .top-main{
 	width: 60%;
 	overflow: hidden;
 }
-
+/*section title styling*/
 .section-title,.section-title-small{
 	font-size: 28px;
-	font-family: ABeeZee;
+	font-family: ABeeZee, sans-serif;
 	margin-bottom: 15px;
 }
-
+/*top side styling*/
 .top-side{
 	width: 40%;
 }
-
+/*popular  styling*/
 .popular a{
 	display: flex;
 	margin-bottom: 10px;
 }
-
+/*popular image styling*/
 .popular-image{
-	/*flex: 0 0 200px;*/
 	width: 40%;
 	overflow: hidden;
 }
@@ -256,12 +277,12 @@ nav .active{
 .popular-image img{
 	width: 100%;
 }
-
+/*popular info styling*/
 .popular-info{
 	margin-left: 10px;
 	width: 60%;
 }
-
+/*popular and middle title styling*/
 .popular-title,.middle-title{
 	font-size: 18px;
 	margin-bottom: 5px;
@@ -269,25 +290,21 @@ nav .active{
 	height: 46px;
 	overflow: hidden;
 }
-
+/*main news styling*/
 .main-news{
 	width: 100%;
 	position: relative;
 	overflow: hidden;
 }
-
-.main-news a{
-
-}
-
+/*main news image styling*/
 .main-news-image{
 	width: 100%;
 }
-
+/*main news image styling*/
 .main-news-image img{
 	width: 100%;
 }
-
+/*main news info styling*/
 .main-news-info{
 	width: 100%;
 	position: absolute;
@@ -297,51 +314,49 @@ nav .active{
 	background: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,1));
 	box-sizing: border-box;
 }
-
+/*main news title styling*/
 .main-news-title{
 	font-size: 32px;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
-
+/*main news author styling*/
 .main-news-author{
 	font-size: 24px;
 }
 
-
+/*middle section styling*/
 .middle-section{
 	display: flex;
 }
-
+/*middle container styling*/
 .middle-container{
 	width: 60%;
 }
-
+/*middle section content styling*/
 .middle-section-content{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
-
+/*middle styling*/
 .middle{
-	flex: 0 0 45%;
-	-webkit-flex: 0 0 45%;  /* For Safari*/
-	-ms-flex: 0 0 45%;  /* For IE*/ 
+	flex: 0 0 45%; 
 	border-radius: 5px;
 	font-size: 0;
 	margin-bottom: 30px;
 }
-
-.middle-image{
+/*middle and job styling*/
+.middle-image,.job-image{
 	overflow: hidden;
 	border-radius: 5px 5px 0 0;
 }
 
-.middle-image img{
+.middle-image img,.job-image img{
 	width: 100%;
 	margin-bottom: 0;
 }
-
+/*middle info styling*/
 .middle-info{
 	background: rgba(128,128,128,0.08);
 	padding: 10px;
@@ -350,40 +365,42 @@ nav .active{
 	border: 1px solid rgba(128,128,128,0.5);
 	box-shadow: 0 3px 15px -3px rgba(0,0,0,0.4);
 }
-
-.middle:hover .middle-info,.tutorial:hover .middle-info{
+/*middle hover styling*/
+.middle:hover .middle-info,.tutorial:hover .middle-info,.job:hover .middle-info{
 	box-shadow: none;
 }
-
+/*middle author styling*/
 .middle-author{
 	font-size: 16px;
 }
-
+/*load more styling*/
+.load-more{
+	margin: 20px auto;
+}
+/*category section styling*/
 .category-section{
 	width: 40%;
 }
-
+/*category list styling*/
 .category-list{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 0 100px 0 10px;
 }
-
+/*category styling*/
 .category{
 	margin-bottom: 20px;
 	position: relative;
 	border-radius: 10px;
 	overflow: hidden;
 	flex: 0 0 45%;
-	-webkit-flex: 0 0 45%;  /* For Safari*/
-	-ms-flex: 0 0 45%;  /* For IE*/ 
 }
-
+/*category image styling*/
 .category-image img{
 	width: 100%;
 }
-
+/*category name styling*/
 .category-name{
 	position: absolute;
 	color: white;
@@ -397,14 +414,12 @@ nav .active{
 	box-sizing: border-box;
 }
 
-
-
-
+/*reviews section styling*/
 .reviews-section{
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
-
+/*review and podcast styling*/
 .review,.podcast{
 	display: flex;
 	padding: 30px;
@@ -413,15 +428,15 @@ nav .active{
 	box-shadow: 0 3px 15px -3px rgba(0,0,0,0.4);
 	margin-bottom : 50px;
 }
-
+/*reviews and podcast styling*/
 .reviews,.podcasts{
 	padding: 0 20px;
 }
-
+/*review and podcast lisr styling*/
 .review-list,.podcast-list{
 	padding: 20px 0;
 }
-
+/*review image styling*/
 .review-image{
 	max-width: 20%;
 	overflow: hidden;
@@ -433,83 +448,96 @@ nav .active{
 	border-radius: 100%;
 }
 
-
+/*review info styling*/
 .review-info{
 	margin-left: 20px;
 	font-family: Karla;
 	width: 80%;
 	font-size: 18px;
 }
-
+/*review description styling*/
 .review-description,.podcast-player{
 	margin-bottom: 25px;
 }
-
+/*podcast title styling*/
 .podcast-title{
 	margin-bottom: 10px;
 }
-
+/*jobs list styling*/
+.jobs-list{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+/*job styling*/
+.job{
+	flex: 0 0 23%;
+	border-radius: 5px;
+	font-size: 0;
+	margin-bottom: 30px;
+}
+/*job comparison styling*/
 .job-comparison{
 	display: grid;
-	/*grid-template-columns: 20% 40% 40%;*/
 	font-size: 18px;
 	border-radius: 5px;
 	overflow: hidden;
 	border: 1px solid #dcdde1;
 	margin: 30px 0;
 }
-
+/*comparision head and job row styling*/
 .comparison-head,.job-row{
 	display: flex;
 }
-
-.comparison-head>div:nth-child(n+1),.job-row>div:nth-child(n+1){
-	flex: 2;
-	-webkit-flex: 2;  /* For Safari*/
-	-ms-flex: 2;  /* For IE*/ 
+/*comparision head and job div styling*/
+.comparison-head>div,.job-row>div{
+	flex: 1;
 	padding: 15px 10px;
 	box-sizing: border-box;
 }
-
+/*comparision head first child styling*/
 .comparison-head>div:nth-child(1),.job-row>div:nth-child(1){
-	flex: 1;
-	-webkit-flex: 1;  /* For Safari*/
-	-ms-flex: 1;  /* For IE*/ 
 	background: #f5f6fa;
 	min-width: 20%;
-	/*word-break:break-all;*/
 }
-
+/*comparision head div styling*/
 .comparison-head>div{
 	background: #dcdde1!important;
 	font-weight: bold;
 }
 
-
+/*jobs styling*/
 .contact-section{
 	display: grid;
 	grid-template-columns: 40% 60%;
 }
-
+/*contact and styling*/
 .contact,.map{
 	padding: 0 20px;
 }
-
-.material-input{
+/*site input styling*/
+.site-input{
 	border-bottom: 1px solid #bdc3c7;
 	padding: 10px;
 	background: rgba(245,246,250,0.4);
 	transition: 0.2s ease border;
 }
-
-.material-button{
+/*site button styling*/
+.site-button{
 	padding: 10px 20px;
 	color: #FFFFFF;
 	background: #3498db;
 	cursor: pointer;
 	margin-left: auto;
+	transition: 0.2s ease;
+	box-shadow: 0 3px 8px -1px rgba(0,0,0,0.4);
 }
 
+.site-button:hover{
+	box-shadow: none;
+}
+/*contact field styling*/
 .contact-field{
 	margin-bottom: 20px;
 	display: flex;
@@ -521,7 +549,7 @@ nav .active{
 	padding: 5px;
 	font-size: 14px;
 }
-
+/*map styling*/
 .map{
 	padding-left: 50px;
 }
@@ -534,13 +562,13 @@ nav .active{
 .section-title-small{
 	font-size: 22px;
 }
-
+/*tutorials styling*/
 .tutorial-list{
 	display: grid;
 	grid-template-columns: 33.33% 33.33% 33.33%;
 	margin-bottom: 30px;
 }
-
+/*tutorial styling*/
 .tutorial{
 	padding: 5px 20px;
 	margin-bottom: 50px;
@@ -552,25 +580,18 @@ nav .active{
 	width: 100%;
 	height: auto;
 	min-height: 250px;
-
+	border: 0;
 }
-
+/*glossary styling*/
 .glossary-container{
 	display: flex;
 	margin: 30px 0;
 }
-
+/*toc styling*/
 .table-of-content{
 	display: flex;
 	flex-direction: column;
 	min-width: 200px;
-
-/*	position: -webkit-sticky;
-	position: sticky;
-	min-width: 200px;
-	align-self: flex-start;
-	top: 0;*/
-
 }
 
 .table-of-content a{
@@ -580,16 +601,14 @@ nav .active{
 
 .glossary-list{
 	flex: 1;
-	-webkit-flex: 1;  /* For Safari*/
-	-ms-flex: 1;  /* For IE*/ 
 }
-
+/*glossary styling*/
 .glossary{
 	display: flex;
 	border-bottom: 3px solid #ecf0f1;
 	padding: 20px 0;
 }
-
+/*glossary image styling*/
 .glossary-image{
     max-width: 100%;
     overflow: hidden;
@@ -604,28 +623,28 @@ nav .active{
 	font-size: 18px;
 	line-height: 1.5;
 }
-
-
+/*footer styling*/
 footer{
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
 	border-top: 1px solid #bdc3c7;
 }
-
+/*footer logo styling*/
 .footer-logo{
-	font-family: Old English Text MT;
+	font-family: "Old English Text MT";
 	font-size: 40px;
 	user-select: none;
 	margin-right: 20px;
 }
-
+/*copyright styling*/
 .copyright{
 	margin-top: 10px;
 }
-
+/*footer list styling*/
 .footer-list{
 	padding: 15px 0;
+	font-size: 18px;
 }
 
 .footer-list ul{
@@ -638,11 +657,8 @@ footer{
 }
 
 
-
-
-
+/*Tablet View styling*/
 @media screen and (max-width:840px){
-
 	.head{
 		flex-direction: column;
 		text-align: center;
@@ -678,10 +694,8 @@ footer{
 		flex-wrap: wrap;
 	}
 
-	.popular{
+	.popular,.job{
 		flex: 0 0 45%;
-		-webkit-flex: 0 0 45%;  /* For Safari*/
-		-ms-flex: 0 0 45%;  /* For IE*/
 		margin-bottom: 30px; 
 	}
 
@@ -690,7 +704,6 @@ footer{
 	}
 
 	.popular-image{
-		/*flex: 0 0 200px;*/
 		width: 100%;
 		margin-bottom: 10px;
 	}
@@ -715,8 +728,6 @@ footer{
 
 	.category{
 		flex: 0 0 21%;
-		-webkit-flex: 0 0 21%;  /* For Safari*/
-		-ms-flex: 0 0 21%;  /* For IE*/ 
 	}
 
 	.tutorial-list{
@@ -760,13 +771,10 @@ footer{
 	.footer-list li{
 		margin-right: 0px;
 	}
-
 }
 
 
-
-
-
+/*Mobile View styling*/
 @media screen and (max-width:640px){
 	#menu{
 		display: block;
@@ -839,16 +847,12 @@ footer{
     	padding: 20px 10px;
     }
 
-	.popular, .middle {
+	.popular, .middle,.job {
     	flex: 0 0 100%;
-    	-webkit-flex: 0 0 100%;  /* For Safari*/
-		-ms-flex: 0 0 100%;  /* For IE*/
 	}
 
 	.category{
 		flex: 0 0 45%;
-		-webkit-flex: 0 0 45%;  /* For Safari*/
-		-ms-flex: 0 0 45%;  /* For IE*/ 
 	}
 
 	.tutorial-list{
@@ -901,4 +905,7 @@ footer{
 		margin-left: 0;
 	}
 
+	.footer-list{
+		font-size: 14px;
+	}
 }

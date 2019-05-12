@@ -1,180 +1,177 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Reviews - News Site</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-</head>
-<body>
-	<div id="menu">
-		<ul id="menu-list">
-			<div class="menu-close" title="Close Menu" onclick="menuClose()">
-				<div class="menu-icon">&#9776;</div>
-			</div>
-			<li class="active-menu"><a href="index.html">Home</a></li>
-			<li><a href="reviews.html">Reviews</a></li>
-			<li><a href="glossary.html">Glossary</a></li>
-			<li><a href="jobs.html">Jobs</a></li>
-			<li><a href="tutorials.html">Tutorials</a></li>
-			<div class="social">
-				<a href="#"><span class="fab fa-facebook"></span></a>
-				<a href="#"><span class="fab fa-twitter"></span></a>
-				<a href="#"><span class="fab fa-instagram"></span></a>
-				<a href="#"><span class="fab fa-pinterest"></span></a>
-			</div>
-		</ul>
+<html lang="en"> <!-- html tag starts -->
+<head><!-- Head  section starts -->
+	<title>Reviews - News Site</title><!-- Title of the page -->
+	<meta charset="utf-8"><!-- Meta Chanracter Set UTF 8  -->
+	<link rel="stylesheet" type="text/css" href="style.css"><!-- Main Css of the website -->
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet"><!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"><!-- Google Fonts -->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/><!-- Favicon -->
+</head><!-- Head  section ends -->
+<body><!-- body  section starts -->
+	<div id="menu"><!-- Menu  section starts -->
+		<ul id="menu-list"><!-- Menu List starts -->
+			<li>
+				<div class="menu-close" title="Close Menu" onclick="menuClose()"><!-- Menu Close Button -->
+					<div class="menu-icon">&#9776;</div>
+				</div>
+			</li>
+			<li><a href="index.html">Home</a></li><!-- List item -->
+			<li class="active"><a href="reviews.html">Reviews</a></li><!-- List item -->
+			<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+			<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+			<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
+			<li class="social">
+				<a href="#"><img src="images/facebook.png" alt="Facebook"></a><!-- Facebook image -->
+				<a href="#"><img src="images/twitter.png" alt="Twitter"></a><!-- Twitter image -->
+				<a href="#"><img src="images/instagram.jpg" alt="Instagram"></a><!-- Instagram image -->
+			</li>
+		</ul><!-- Menu List ends -->
 	</div>
-	<header>
+	<header><!-- Header Section starts -->
 		<div class="top-info container">
-			<div class="menu-open" title="Open Menu" onclick="menuOpen()">
+			<div class="menu-open" title="Open Menu" onclick="menuOpen()"><!-- Menu Open Button -->
 				<div class="menu-icon">&#9776;</div>
 			</div>
 			<div class="social">
-				<a href="#"><span class="fab fa-facebook"></span></a>
-				<a href="#"><span class="fab fa-twitter"></span></a>
-				<a href="#"><span class="fab fa-instagram"></span></a>
-				<a href="#"><span class="fab fa-pinterest"></span></a>
+				<a href="#"><img src="images/facebook.png" alt="Facebook"></a><!-- Facebook image -->
+				<a href="#"><img src="images/twitter.png" alt="Twitter"></a><!-- Twitter image -->
+				<a href="#"><img src="images/instagram.jpg" alt="Instagram"></a><!-- Instagram image -->
 			</div>
+			<!-- Date Section starts -->
 			<div class="date">
 				<span class="calendar-icon">&#128197;</span>
 				<span id="date"></span>
 			</div>
+			<!-- Date Section ends -->
 		</div>
-		<div class="head">
+		<div class="head"><!-- Head Section starts -->
 			<div id="logo" title="The Nami Times">The Nami Times</div>
+			<!-- Search Section starts -->
 			<div class="search">
 				<form action="#" method="GET" class="search-form">
 					<input type="text" name="searchtext" class="searchtext" placeholder="Search here..." autocomplete="off">
 					<input type="submit" name="searchbutton" class="searchbutton" value="&#x1f50d;">
 				</form>
 			</div>
-		</div>
-		<nav>
-			<ul class="nav-list">
-				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="reviews.html">Reviews</a></li>
-				<li><a href="glossary.html">Glossary</a></li>
-				<li><a href="jobs.html">Jobs</a></li>
-				<li><a href="tutorials.html">Tutorials</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<div class="reviews-section container">
-			<div class="reviews">
-				<div class="section-title">Reviews</div>
-				<div class="review-list">
-					<div class="review">
+			<!-- Search Section ends -->
+		</div><!-- Head Section ends -->
+		<nav><!-- Navigation Setion starts -->
+			<ul class="nav-list"><!-- Nav List Starts-->
+				<li><a href="index.html">Home</a></li><!-- List item -->
+				<li class="active"><a href="reviews.html">Reviews</a></li><!-- List item -->
+				<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+				<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+				<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
+			</ul><!-- Nav List Ends-->
+		</nav><!-- NAvigation Section ends -->
+	</header><!-- Header Section ends -->
+	<section><!-- Main Section Starts -->
+		<div class="reviews-section container"><!-- Review Whole Section Starts -->
+			<div class="reviews"><!-- Review Section Starts -->
+				<h2 class="section-title">Reviews</h2>
+				<div class="review-list"><!-- Review List Starts -->
+					<div class="review"><!-- Review Starts -->
 						<div class="review-image">
-							<img src="images/review1.jpg">
+							<img src="images/review1.jpg" alt="Aaditya Bhusal"><!-- Review Image -->
 						</div>
 						<div class="review-info">
-							<div class="review-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							<br><br>
-							Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur
-							</div>
-							<div class="review-name">- Ram Lal</div>
+							<div class="review-description">The Nami Times is a trustworthy news site. The sources provide are heavily researched and correct which makes me trust this site and recommend it to others.   
+							</div><!-- Review -->
+							<div class="review-name">- Aaditya Bhusal</div><!-- Review Person -->
 						</div>
-					</div>
-					<div class="review">
+					</div><!-- Review Ends -->
+					<div class="review"><!-- Review Starts -->
 						<div class="review-image">
-							<img src="images/review2.jpg">
+							<img src="images/review2.jpg" alt="The News Circle"><!-- Review Image -->
 						</div>
 						<div class="review-info">
-							<div class="review-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							<br><br>
-							Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur
-							</div>
-							<div class="review-name">- Shreedhar Kaila</div>
+							<div class="review-description">We, the members of the news circle have always been appretiating The Nami Times for providing authentic and reliable news to the people since the establishment of the site. 
+							</div><!-- Review -->
+							<div class="review-name">- The News Circle</div><!-- Review Person -->
 						</div>
-					</div>
-					<div class="review">
+					</div><!-- Review Ends -->
+					<div class="review"><!-- Review Starts -->
 						<div class="review-image">
-							<img src="images/review3.jpg">
+							<img src="images/review3.jpg" alt="Tim Lee"><!-- Review Image -->
 						</div>
 						<div class="review-info">
-							<div class="review-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<div class="review-description">I specifically like the website a lot. It is clean, simple and beautiful. There are not too much content to distract the visitor from the actual news.
 							<br><br>
-							Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur
-							</div>
-							<div class="review-name">- Krishna Bahadur</div>
+							There are few but good animation and no unnecessary animations and effects which makes the website load much fas
+							</div><!-- Review -->
+							<div class="review-name">- Tim Lee</div><!-- Review Person -->
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="podcasts">
-				<div class="section-title">Podcasts</div>
-				<div class="podcast-list">
-					<div class="podcast">
+					</div><!-- Review Ends -->
+				</div><!-- Review List Ends -->
+			</div><!-- Review Section Ends -->
+			<div class="podcasts"><!-- Podcast Section Starts -->
+				<h2 class="section-title">Podcasts</h2>
+				<div class="podcast-list"><!-- Podcast List Starts -->
+					<div class="podcast"><!-- Podcast Starts -->
 						<div class="review-image">
-							<img src="images/podcast1.jpg">
+							<img src="images/podcast1.jpg" alt="The Recent Podcast"><!-- Podcast Image -->
 						</div>
 						<div class="review-info">
 							<div class="podcast-player">
-								<div class="podcast-title">This news site will change the way you see news.</div>
-								<audio controls>
+								<div class="podcast-title">This news site is beautiful in design and provides authentic news - Episode 113</div><!-- Podcast Title -->
+								<audio controls><!-- Podcast -->
 									<source src="podcasts/podcast.mp3" type="audio/mpeg">
 									Your browser does not support the audio tag.
 								</audio>
 							</div>
-							<div class="review-name">- The Recent Podcast</div>
+							<div class="review-name">- The Recent Podcast</div><!-- Podcast Author -->
 						</div>
-					</div>
-					<div class="podcast">
+					</div><!-- Podcast Ends -->
+					<div class="podcast"><!-- Podcast Starts -->
 						<div class="review-image">
-							<img src="images/podcast2.jpg">
+							<img src="images/podcast2.jpg" alt="Random Nepali Podcast"><!-- Podcast Image -->
 						</div>
 						<div class="review-info">
 							<div class="podcast-player">
-								<div class="podcast-title">This news site will change the way you see news.</div>
-								<audio controls>
+								<div class="podcast-title">Let's talk about some geniune and trustworthy news portals - Episode 44</div><!-- Podcast Title -->
+								<audio controls><!-- Podcast -->
 									<source src="podcasts/podcast.mp3" type="audio/mpeg">
 									Your browser does not support the audio tag.
 								</audio>
 							</div>
-							<div class="review-name">- Random Nepali Podcast</div>
+							<div class="review-name">- Random Nepali Podcast</div><!-- Podcast Author -->
 						</div>
-					</div>
-					<div class="podcast">
+					</div><!-- Podcast Ends -->
+					<div class="podcast"><!-- Podcast Starts -->
 						<div class="review-image">
-							<img src="images/podcast3.jpg">
+							<img src="images/podcast3.jpg" alt="The Unknown Podcast"><!-- Podcast Image -->
 						</div>
 						<div class="review-info">
 							<div class="podcast-player">
-								<div class="podcast-title">This news site will change the way you see news.</div>
-								<audio controls>
+								<div class="podcast-title">The state of news site these days - Episode 82</div><!-- Podcast Title -->
+								<audio controls><!-- Podcast -->
 									<source src="podcasts/podcast.mp3" type="audio/mpeg">
 									Your browser does not support the audio tag.
 								</audio>
 							</div>
-							<div class="review-name">- The Unknown Podcast</div>
+							<div class="review-name">- The Unknown Podcast</div><!-- Podcast Author -->
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer>
+					</div><!-- Podcast Ends -->
+				</div><!-- Podcast Ends -->
+			</div><!-- Podcast Section Ends -->
+		</div><!-- Review Whole Section Ends -->
+	</section><!-- Main Section ends -->
+	<footer><!-- Footer Section starts -->
 		<div class="footer-info">
-			<div class="footer-logo" title="The Nami Times">The Nami Times</div>
-			<div class="copyright">Copyright © <span id="copyright-year"></span> The Nami Times</div>
+			<div class="footer-logo" title="The Nami Times">The Nami Times</div><!-- Logo -->
+			<div class="copyright">Copyright © <span id="copyright-year"></span> The Nami Times</div><!-- Copyright -->
 		</div>
-		<div class="footer-list">
+		<div class="footer-list"><!-- Footer list starts -->
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="reviews.html">Reviews</a></li>
-				<li><a href="glossary.html">Glossary</a></li>
-				<li><a href="jobs.html">Jobs</a></li>
-				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="index.html">Home</a></li> <!-- List item -->
+				<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+				<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+				<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+				<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
 			</ul>
-		</div>
-	</footer>
-	<script type="text/javascript" src="script.js"></script>
-</body>
-</html>
+		</div><!-- Footer list ends -->
+	</footer><!-- Footer Section ends -->
+	<script src="script.js"></script><!-- Main Script of the website -->
+</body><!-- Body Section Ends -->
+</html><!-- Html Ends -->

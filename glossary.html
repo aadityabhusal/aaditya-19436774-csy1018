@@ -1,241 +1,168 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Glossary - News Site</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-</head>
-<body>
-	<div id="menu">
-		<ul id="menu-list">
-			<div class="menu-close" title="Close Menu" onclick="menuClose()">
-				<div class="menu-icon">&#9776;</div>
-			</div>
-			<li class="active-menu"><a href="index.html">Home</a></li>
-			<li><a href="reviews.html">Reviews</a></li>
-			<li><a href="glossary.html">Glossary</a></li>
-			<li><a href="jobs.html">Jobs</a></li>
-			<li><a href="tutorials.html">Tutorials</a></li>
-			<div class="social">
-				<a href="#"><span class="fab fa-facebook"></span></a>
-				<a href="#"><span class="fab fa-twitter"></span></a>
-				<a href="#"><span class="fab fa-instagram"></span></a>
-				<a href="#"><span class="fab fa-pinterest"></span></a>
-			</div>
-		</ul>
-	</div>	
-	<header>
+<html lang="en"> <!-- html tag starts -->
+<head><!-- Head  section starts -->
+	<title>Glossary - News Site</title><!-- Title of the page -->
+	<meta charset="utf-8"><!-- Meta Chanracter Set UTF 8  -->
+	<link rel="stylesheet" type="text/css" href="style.css"><!-- Main Css of the website -->
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet"><!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"><!-- Google Fonts -->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/><!-- Favicon -->
+</head><!-- Head  section ends -->
+<body><!-- body  section starts -->
+	<div id="menu"><!-- Menu  section starts -->
+		<ul id="menu-list"><!-- Menu List starts -->
+			<li>
+				<div class="menu-close" title="Close Menu" onclick="menuClose()"><!-- Menu Close Button -->
+					<div class="menu-icon">&#9776;</div>
+				</div>
+			</li>
+			<li><a href="index.html">Home</a></li><!-- List item -->
+			<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+			<li class="active"><a href="glossary.html">Glossary</a></li><!-- List item -->
+			<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+			<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
+			<li class="social">
+				<a href="#"><img src="images/facebook.png" alt="Facebook"></a><!-- Facebook image -->
+				<a href="#"><img src="images/twitter.png" alt="Twitter"></a><!-- Twitter image -->
+				<a href="#"><img src="images/instagram.jpg" alt="Instagram"></a><!-- Instagram image -->
+			</li>
+		</ul><!-- Menu List ends -->
+	</div>
+	<header><!-- Header Section starts -->
 		<div class="top-info container">
-			<div class="menu-open" title="Open Menu" onclick="menuOpen()">
+			<div class="menu-open" title="Open Menu" onclick="menuOpen()"><!-- Menu Open Button -->
 				<div class="menu-icon">&#9776;</div>
 			</div>
 			<div class="social">
-				<a href="#"><span class="fab fa-facebook"></span></a>
-				<a href="#"><span class="fab fa-twitter"></span></a>
-				<a href="#"><span class="fab fa-instagram"></span></a>
-				<a href="#"><span class="fab fa-pinterest"></span></a>
+				<a href="#"><img src="images/facebook.png" alt="Facebook"></a><!-- Facebook image -->
+				<a href="#"><img src="images/twitter.png" alt="Twitter"></a><!-- Twitter image -->
+				<a href="#"><img src="images/instagram.jpg" alt="Instagram"></a><!-- Instagram image -->
 			</div>
+			<!-- Date Section starts -->
 			<div class="date">
 				<span class="calendar-icon">&#128197;</span>
 				<span id="date"></span>
 			</div>
+			<!-- Date Section ends -->
 		</div>
-		<div class="head">
+		<div class="head"><!-- Head Section starts -->
 			<div id="logo" title="The Nami Times">The Nami Times</div>
+			<!-- Search Section starts -->
 			<div class="search">
 				<form action="#" method="GET" class="search-form">
 					<input type="text" name="searchtext" class="searchtext" placeholder="Search here..." autocomplete="off">
 					<input type="submit" name="searchbutton" class="searchbutton" value="&#x1f50d;">
 				</form>
 			</div>
-		</div>
-		<nav>
-			<ul class="nav-list">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="reviews.html">Reviews</a></li>
-				<li class="active"><a href="glossary.html">Glossary</a></li>
-				<li><a href="jobs.html">Jobs</a></li>
-				<li><a href="tutorials.html">Tutorials</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<div class="glossary-section container">
-			<div class="section-title">Glossary</div>
+			<!-- Search Section ends -->
+		</div><!-- Head Section ends -->
+		<nav><!-- Navigation Setion starts -->
+			<ul class="nav-list"><!-- Nav List Starts-->
+				<li><a href="index.html">Home</a></li><!-- List item -->
+				<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+				<li class="active"><a href="glossary.html">Glossary</a></li><!-- List item -->
+				<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+				<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
+			</ul><!-- Nav List Ends-->
+		</nav><!-- NAvigation Section ends -->
+	</header><!-- Header Section ends -->
+	<section><!-- Main Section starts -->
+		<div class="glossary-section container"><!-- Glossary Section starts -->
+			<h2 class="section-title">Glossary</h2><!-- Glossary Title -->
 			<div class="glossary-container">
-				<div class="table-of-content container">
-					<div class="section-title-small">Table of Contents</div>
+				<div class="table-of-content container"><!-- Table of Contents Starts -->
+					<h2 class="section-title-small">Table of Contents</h2>
 					<a href="#html">HTML/HTML5</a>
 					<a href="#css">CSS/CSS3</a>
 					<a href="#javascript">Javascript</a>
 					<a href="#responsive">Responsive Design</a>
-					<a href="#material">Material Design</a>
 					<a href="#parallax">Parallax Scrolling</a>
-				</div>
-				<div class="glossary-list">
-					<div id="html" class="glossary-content container">
-						<div class="section-title-small">HTML/HTML5</div>
+				</div><!-- Table of Contents ends -->
+				<div class="glossary-list"><!-- Glossary List Starts -->
+					<div id="html" class="glossary-content container"><!-- Glossary Starts -->
+						<h2 class="section-title-small">HTML/HTML5</h2><!-- Glossary Title -->
 						<div class="glossary">
 							<div class="glossary-image">
-								<img src="images/html5.png">
+								<img src="images/html5.png" alt="HTML/HTML5"><!-- Glossary Image -->
 							</div>
-							<div class="glossary-info">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<div class="glossary-info"><!-- Glossary Text -->
+								HTML stands for HyperText Markup Language, and is the language of the web.Put simply, HTML provides a way for the web designer to tell your web browser how to treat a particular piece of content.
 								<br><br>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								 HTML contains a number of different tags that allow the designer to mark up their content with semantic meaning so that paragraphs are identified as text copy, while images are imported as images and so on.
 							</div>
 						</div>
-					</div>
-					<div id="css" class="glossary-content container">
-						<div class="section-title-small">CSS/CSS3</div>
+					</div><!-- Glossary Ends -->
+					<div id="css" class="glossary-content container"><!-- Glossary Starts -->
+						<h2 class="section-title-small">CSS/CSS3</h2><!-- Glossary Title -->
 						<div class="glossary">
 							<div class="glossary-image">
-								<img src="images/css3.png">
+								<img src="images/css3.png" alt="CSS/CSS3"><!-- Glossary Image -->
 							</div>
-							<div class="glossary-info">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<div class="glossary-info"><!-- Glossary Text -->
+								Cascading Style Sheets (CSS) provide a method for designers to create a visual set of rules that determine how different elements within a web page will be rendered on screen by the browser.
 								<br><br>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								CSS allows things like the colour of text, the background, the size, shape and position of all the different parts of a page to be set.
 							</div>
 						</div>
-					</div>
-					<div id="javascript" class="glossary-content container">
-						<div class="section-title-small">JavaScript</div>
+					</div><!-- Glossary Ends -->
+					<div id="javascript" class="glossary-content container"><!-- Glossary Starts -->
+						<h2 class="section-title-small">JavaScript</h2><!-- Glossary Title -->
 						<div class="glossary">
 							<div class="glossary-image">
-								<img src="images/js.png">
+								<img src="images/js.png" alt="JavaScript"><!-- Glossary Image -->
 							</div>
-							<div class="glossary-info">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<div class="glossary-info"><!-- Glossary Text -->
+								JavaScript is a scripting language that allows designers to create interactions on a web page.JavaScript was primarily used for form validation, and provided those annoying alert boxes that popped up when you forgot to enter your telephone number in the phone field.
 								<br><br>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								 These days there are many more viable uses for JavaScript, including special visual effects, or the ability to load new content without having to reload the whole page.
 							</div>
 						</div>
-					</div>
-					<div id="responsive" class="glossary-content container">
-						<div class="section-title-small">Responsive Design</div>
+					</div><!-- Glossary Ends -->
+					<div id="responsive" class="glossary-content container"><!-- Glossary Starts -->
+						<h2 class="section-title-small">Responsive Design</h2><!-- Glossary Title -->
 						<div class="glossary">
 							<div class="glossary-image">
-								<img src="images/responsive.png">
+								<img src="images/responsive.png" alt="Responsive Design"><!-- Glossary Image -->
 							</div>
-							<div class="glossary-info">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<div class="glossary-info"><!-- Glossary Text -->
+								 Responsive Design is one that adapts to the user's device and, in an ideal world, the user's context so that it displays the content required in the most appropriate and accessible manner, regardless of what kind of web-connected device is being used to view it. 
 								<br><br>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								 In practice this means a web page will re-paginated itself as the screen size reduces or increases, displaying in multiple columns when viewed on a desktop computer, but only a single column when viewed on a smartphone.
 							</div>
 						</div>
-					</div>
-					<div id="material" class="glossary-content container">
-						<div class="section-title-small">Material Design</div>
-						<div class="glossary">
-							<div class="glossary-image">
-								<img src="images/material.png">
-							</div>
-							<div class="glossary-info">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								<br><br>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</div>
-					</div>
+					</div><!-- Glossary Ends -->
 					<div id="parallax" class="glossary-content container">
-						<div class="section-title-small">Parallax Scrolling</div>
+						<h2 class="section-title-small">Parallax Scrolling</h2><!-- Glossary Title -->
 						<div class="glossary">
 							<div class="glossary-image">
-								<img src="images/parallax.png">
+								<img src="images/parallax.png" alt="Parallax Scrolling"><!-- Glossary Image -->
 							</div>
-							<div class="glossary-info">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<div class="glossary-info"><!-- Glossary Text -->
+								Parallax is the effect seen when items closer to your viewpoint appear to move more quickly than items farther away. This is best seen from a moving car or train, where fences and trees close to the vehicle appear to move past quickly, while mountains in the distance appear to move more slowly.
 								<br><br>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								On the web, this same effect is being used to create a sense of depth to site designs, often providing movement in response to the user scrolling.
 							</div>
 						</div>
-					</div>
-				</div>
+					</div><!-- Glossary Ends -->
+				</div><!-- Glossary List Starts -->
 			</div>
-		</div>
-	</section>
-	<aside>
-		
-	</aside>
-	<footer>
+		</div><!-- Glossary Section List Starts -->
+	</section><!-- Main Section ends -->
+	<footer><!-- Footer Section starts -->
 		<div class="footer-info">
-			<div class="footer-logo" title="The Nami Times">The Nami Times</div>
-			<div class="copyright">Copyright © <span id="copyright-year"></span> The Nami Times</div>
+			<div class="footer-logo" title="The Nami Times">The Nami Times</div><!-- Logo -->
+			<div class="copyright">Copyright © <span id="copyright-year"></span> The Nami Times</div><!-- Copyright -->
 		</div>
-		<div class="footer-list">
+		<div class="footer-list"><!-- Footer list starts -->
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="reviews.html">Reviews</a></li>
-				<li><a href="glossary.html">Glossary</a></li>
-				<li><a href="jobs.html">Jobs</a></li>
-				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="index.html">Home</a></li> <!-- List item -->
+				<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+				<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+				<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+				<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
 			</ul>
-		</div>
-	</footer>
-	<script type="text/javascript" src="script.js"></script>
-</body>
-</html>
+		</div><!-- Footer list ends -->
+	</footer><!-- Footer Section ends -->
+	<script src="script.js"></script><!-- Main Script of the website -->
+</body><!-- Body Section Ends -->
+</html><!-- Html Ends -->

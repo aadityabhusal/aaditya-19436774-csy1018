@@ -1,184 +1,146 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorials - News Site</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-</head>
-<body>
-	<div id="menu">
-		<ul id="menu-list">
-			<div class="menu-close" title="Close Menu" onclick="menuClose()">
-				<div class="menu-icon">&#9776;</div>
-			</div>
-			<li class="active-menu"><a href="index.html">Home</a></li>
-			<li><a href="reviews.html">Reviews</a></li>
-			<li><a href="glossary.html">Glossary</a></li>
-			<li><a href="jobs.html">Jobs</a></li>
-			<li><a href="tutorials.html">Tutorials</a></li>
-			<div class="social">
-				<a href="#"><span class="fab fa-facebook"></span></a>
-				<a href="#"><span class="fab fa-twitter"></span></a>
-				<a href="#"><span class="fab fa-instagram"></span></a>
-				<a href="#"><span class="fab fa-pinterest"></span></a>
-			</div>
-		</ul>
+<html lang="en"> <!-- html tag starts -->
+<head><!-- Head  section starts -->
+	<title>Tutorials - News Site</title><!-- Title of the page -->
+	<meta charset="utf-8"><!-- Meta Chanracter Set UTF 8  -->
+	<link rel="stylesheet" type="text/css" href="style.css"><!-- Main Css of the website -->
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet"><!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"><!-- Google Fonts -->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/><!-- Favicon -->
+</head><!-- Head  section ends -->
+<body><!-- body  section starts -->
+	<div id="menu"><!-- Menu  section starts -->
+		<ul id="menu-list"><!-- Menu List starts -->
+			<li>
+				<div class="menu-close" title="Close Menu" onclick="menuClose()"><!-- Menu Close Button -->
+					<div class="menu-icon">&#9776;</div>
+				</div>
+			</li>
+			<li><a href="index.html">Home</a></li><!-- List item -->
+			<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+			<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+			<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+			<li class="active"><a href="tutorials.html">Tutorials</a></li><!-- List item -->
+			<li class="social">
+				<a href="#"><img src="images/facebook.png" alt="Facebook"></a><!-- Facebook image -->
+				<a href="#"><img src="images/twitter.png" alt="Twitter"></a><!-- Twitter image -->
+				<a href="#"><img src="images/instagram.jpg" alt="Instagram"></a><!-- Instagram image -->
+			</li>
+		</ul><!-- Menu List ends -->
 	</div>
-	<header>
+	<header><!-- Header Section starts -->
 		<div class="top-info container">
-			<div class="menu-open" title="Open Menu" onclick="menuOpen()">
+			<div class="menu-open" title="Open Menu" onclick="menuOpen()"><!-- Menu Open Button -->
 				<div class="menu-icon">&#9776;</div>
 			</div>
 			<div class="social">
-				<a href="#"><span class="fab fa-facebook"></span></a>
-				<a href="#"><span class="fab fa-twitter"></span></a>
-				<a href="#"><span class="fab fa-instagram"></span></a>
-				<a href="#"><span class="fab fa-pinterest"></span></a>
+				<a href="#"><img src="images/facebook.png" alt="Facebook"></a><!-- Facebook image -->
+				<a href="#"><img src="images/twitter.png" alt="Twitter"></a><!-- Twitter image -->
+				<a href="#"><img src="images/instagram.jpg" alt="Instagram"></a><!-- Instagram image -->
 			</div>
+			<!-- Date Section starts -->
 			<div class="date">
 				<span class="calendar-icon">&#128197;</span>
 				<span id="date"></span>
 			</div>
+			<!-- Date Section ends -->
 		</div>
-		<div class="head">
+		<div class="head"><!-- Head Section starts -->
 			<div id="logo" title="The Nami Times">The Nami Times</div>
+			<!-- Search Section starts -->
 			<div class="search">
 				<form action="#" method="GET" class="search-form">
 					<input type="text" name="searchtext" class="searchtext" placeholder="Search here..." autocomplete="off">
 					<input type="submit" name="searchbutton" class="searchbutton" value="&#x1f50d;">
 				</form>
 			</div>
-		</div>
-		<nav>
-			<ul class="nav-list">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="reviews.html">Reviews</a></li>
-				<li><a href="glossary.html">Glossary</a></li>
-				<li><a href="jobs.html">Jobs</a></li>
-				<li class="active"><a href="tutorials.html">Tutorials</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<div class="tutorials-section container">
-			<div class="section-title">Tutorials</div>
-			<div class="description">
+			<!-- Search Section ends -->
+		</div><!-- Head Section ends -->
+		<nav><!-- Navigation Setion starts -->
+			<ul class="nav-list"><!-- Nav List Starts-->
+				<li><a href="index.html">Home</a></li><!-- List item -->
+				<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+				<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+				<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+				<li class="active"><a href="tutorials.html">Tutorials</a></li><!-- List item -->
+			</ul><!-- Nav List Ends-->
+		</nav><!-- NAvigation Section ends -->
+	</header><!-- Header Section ends -->
+	<section><!-- Main Section Starts -->
+		<div class="tutorials-section container"><!-- Tutorials Section Starts -->
+			<h2 class="section-title">Tutorials</h2>
+			<div class="description"><!-- Tutorials Description -->
 				Welcome to our News Site's Tutorials Page. This page includes a list of video tutorials to help you learn HTML5 and CSS3. We have embedded a list of best YouTube tutorials from different channels across the site to provide you quality learning experience. The upper section of this page includes HTML/HTML5 tutorials and the lower section includes CSS/CSS3 tutorials. If you want more tutorial to be added to this page, please contact us with your queries or your requests.
 			</div>
-			<div class="tutorials container">
-				<div class="section-title-small">HTML Tutorials</div>
+			<div class="tutorials container"><!-- Tutorials Container Starts -->
+				<h2 class="section-title-small">HTML Tutorials</h2><!-- Tutorials Title -->
 				<div class="tutorial-list">
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="tutorial"><!-- Tutorial Starts -->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!-- Youtube Tutorial IFrame -->
 						<div class="middle-info">
-							<div class="middle-title">HTML Full Course - Build a Website Tutorial</div>
-							<div class="middle-author">By FreeCodeCamp</div>
+							<div class="middle-title">HTML Full Course - Build a Website Tutorial</div><!-- Tutorial Title -->
+							<div class="middle-author">By FreeCodeCamp</div><!-- Tutorial Author -->
 						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div><!-- Tutorial Ends -->
+					<div class="tutorial"><!-- Tutorial Starts -->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!-- Youtube Tutorial IFrame -->
 						<div class="middle-info">
-							<div class="middle-title">HTML Crash Course For Absolute Beginners</div>
-							<div class="middle-author">By Traversy Media</div>
+							<div class="middle-title">HTML Crash Course For Absolute Beginners</div><!-- Tutorial Title -->
+							<div class="middle-author">By Traversy Media</div><!-- Tutorial Author -->
 						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/kDyJN7qQETA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div><!-- Tutorial Ends -->
+					<div class="tutorial"><!-- Tutorial Starts -->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/kDyJN7qQETA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!-- Youtube Tutorial IFrame -->
 						<div class="middle-info">
-							<div class="middle-title">HTML 5 Tutorial</div>
-							<div class="middle-author">By Derek Banas</div>
+							<div class="middle-title">HTML 5 Tutorial</div><!-- Tutorial Title -->
+							<div class="middle-author">By Derek Banas</div><!-- Tutorial Author -->
 						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/DPnqb74Smug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<div class="middle-info">
-							<div class="middle-title">Learn HTML5 - Full Course with Code Samples</div>
-							<div class="middle-author">By FreeCodeCamp</div>
-						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/JdDsWq32M6w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<div class="middle-info">
-							<div class="middle-title">HTML Complete Tutorial In Nepali</div>
-							<div class="middle-author">By Technology Channel</div>
-						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Wm6CUkswsNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<div class="middle-info">
-							<div class="middle-title">Build An HTML5 Website With A Responsive Layout</div>
-							<div class="middle-author">By Traversy Media</div>
-						</div>
-					</div>
+					</div><!-- Tutorial Ends -->
 				</div>
 			</div>
 			<div class="tutorials container">
-				<div class="section-title-small">CSS Tutorials</div>
+				<h2 class="section-title-small">CSS Tutorials</h2>
 				<div class="tutorial-list">
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/yfoY53QXEnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="tutorial"><!-- Tutorial Starts -->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/yfoY53QXEnI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!-- Youtube Tutorial IFrame -->
 						<div class="middle-info">
-							<div class="middle-title">CSS Crash Course For Absolute Beginners</div>
-							<div class="middle-author">By Traversy Media</div>
+							<div class="middle-title">CSS Crash Course For Absolute Beginners</div><!-- Tutorial Title -->
+							<div class="middle-author">By Traversy Media</div><!-- Tutorial Author -->
 						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/ieTHC78giGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div><!-- Tutorial Ends -->
+					<div class="tutorial"><!-- Tutorial Starts -->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/ieTHC78giGQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!-- Youtube Tutorial IFrame -->
 						<div class="middle-info">
-							<div class="middle-title">CSS Full Course - Includes Flexbox and CSS Grid Tutorials</div>
-							<div class="middle-author">By FreeCodeCamp</div>
+							<div class="middle-title">CSS Full Course - Includes Flexbox and CSS Grid Tutorials</div><!-- Tutorial Title -->
+							<div class="middle-author">By FreeCodeCamp</div><!-- Tutorial Author -->
 						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/8gNrZ4lAnAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div><!-- Tutorial Ends -->
+					<div class="tutorial"><!-- Tutorial Starts -->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/8gNrZ4lAnAw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!-- Youtube Tutorial IFrame -->
 						<div class="middle-info">
-							<div class="middle-title">The 2019 Frontend Developer Crash Course - HTML & CSS Tutorial for Beginners</div>
-							<div class="middle-author">By DesignCourse</div>
+							<div class="middle-title">The 2019 Frontend Developer Crash Course - HTML & CSS Tutorial for Beginners</div><!-- Tutorial Title -->
+							<div class="middle-author">By DesignCourse</div><!-- Tutorial Author -->
 						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/CUxH_rWSI1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<div class="middle-info">
-							<div class="middle-title">CSS3 Tutorial</div>
-							<div class="middle-author">By Derek Banas</div>
-						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/zHUpx90NerM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<div class="middle-info">
-							<div class="middle-title">CSS3 Animation & Transitions Crash Course</div>
-							<div class="middle-author">By Traversy Media</div>
-						</div>
-					</div>
-					<div class="tutorial">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/8eobtm_1x2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<div class="middle-info">
-							<div class="middle-title">CSS Complete Tutorial In Nepali</div>
-							<div class="middle-author">By Technology Channel</div>
-						</div>
-					</div>
+					</div><!-- Tutorial Ends -->
 				</div>
 			</div>
-		</div>
-	</section>
-	<footer>
+		</div><!-- Tutorials Section Ends -->
+	</section><!-- Main Section ends -->
+	<footer><!-- Footer Section starts -->
 		<div class="footer-info">
-			<div class="footer-logo" title="The Nami Times">The Nami Times</div>
-			<div class="copyright">Copyright © <span id="copyright-year"></span> The Nami Times</div>
+			<div class="footer-logo" title="The Nami Times">The Nami Times</div><!-- Logo -->
+			<div class="copyright">Copyright © <span id="copyright-year"></span> The Nami Times</div><!-- Copyright -->
 		</div>
-		<div class="footer-list">
+		<div class="footer-list"><!-- Footer list starts -->
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="reviews.html">Reviews</a></li>
-				<li><a href="glossary.html">Glossary</a></li>
-				<li><a href="jobs.html">Jobs</a></li>
-				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="index.html">Home</a></li> <!-- List item -->
+				<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+				<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+				<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+				<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
 			</ul>
-		</div>
-	</footer>
-	<script type="text/javascript" src="script.js"></script>
-</body>
-</html>
+		</div><!-- Footer list ends -->
+	</footer><!-- Footer Section ends -->
+	<script src="script.js"></script><!-- Main Script of the website -->
+</body><!-- Body Section Ends -->
+</html><!-- Html Ends -->

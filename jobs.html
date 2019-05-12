@@ -1,153 +1,221 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Jobs - News Site</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-</head>
-<body>
-	<div id="menu">
-		<ul id="menu-list">
-			<div class="menu-close" title="Close Menu" onclick="menuClose()">
-				<div class="menu-icon">&#9776;</div>
-			</div>
-			<li class="active-menu"><a href="index.html">Home</a></li>
-			<li><a href="reviews.html">Reviews</a></li>
-			<li><a href="glossary.html">Glossary</a></li>
-			<li><a href="jobs.html">Jobs</a></li>
-			<li><a href="tutorials.html">Tutorials</a></li>
-			<div class="social">
-				<a href="#"><span class="fab fa-facebook"></span></a>
-				<a href="#"><span class="fab fa-twitter"></span></a>
-				<a href="#"><span class="fab fa-instagram"></span></a>
-				<a href="#"><span class="fab fa-pinterest"></span></a>
-			</div>
-		</ul>
+<html lang="en"> <!-- html tag starts -->
+<head><!-- Head  section starts -->
+	<title>Jobs - News Site</title><!-- Title of the page -->
+	<meta charset="utf-8"><!-- Meta Chanracter Set UTF 8  -->
+	<link rel="stylesheet" type="text/css" href="style.css"><!-- Main Css of the website -->
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet"><!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"><!-- Google Fonts -->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/><!-- Favicon -->
+</head><!-- Head  section ends -->
+<body><!-- body  section starts -->
+	<div id="menu"><!-- Menu  section starts -->
+		<ul id="menu-list"><!-- Menu List starts -->
+			<li>
+				<div class="menu-close" title="Close Menu" onclick="menuClose()"><!-- Menu Close Button -->
+					<div class="menu-icon">&#9776;</div>
+				</div>
+			</li>
+			<li><a href="index.html">Home</a></li><!-- List item -->
+			<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+			<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+			<li class="active"><a href="jobs.html">Jobs</a></li><!-- List item -->
+			<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
+			<li class="social">
+				<a href="#"><img src="images/facebook.png" alt="Facebook"></a><!-- Facebook image -->
+				<a href="#"><img src="images/twitter.png" alt="Twitter"></a><!-- Twitter image -->
+				<a href="#"><img src="images/instagram.jpg" alt="Instagram"></a><!-- Instagram image -->
+			</li>
+		</ul><!-- Menu List ends -->
 	</div>
-	<header>
+	<header><!-- Header Section starts -->
 		<div class="top-info container">
-			<div class="menu-open" title="Open Menu" onclick="menuOpen()">
+			<div class="menu-open" title="Open Menu" onclick="menuOpen()"><!-- Menu Open Button -->
 				<div class="menu-icon">&#9776;</div>
 			</div>
 			<div class="social">
-				<a href="#"><span class="fab fa-facebook"></span></a>
-				<a href="#"><span class="fab fa-twitter"></span></a>
-				<a href="#"><span class="fab fa-instagram"></span></a>
-				<a href="#"><span class="fab fa-pinterest"></span></a>
+				<a href="#"><img src="images/facebook.png" alt="Facebook"></a><!-- Facebook image -->
+				<a href="#"><img src="images/twitter.png" alt="Twitter"></a><!-- Twitter image -->
+				<a href="#"><img src="images/instagram.jpg" alt="Instagram"></a><!-- Instagram image -->
 			</div>
+			<!-- Date Section starts -->
 			<div class="date">
 				<span class="calendar-icon">&#128197;</span>
 				<span id="date"></span>
 			</div>
+			<!-- Date Section ends -->
 		</div>
-		<div class="head">
+		<div class="head"><!-- Head Section starts -->
 			<div id="logo" title="The Nami Times">The Nami Times</div>
+			<!-- Search Section starts -->
 			<div class="search">
 				<form action="#" method="GET" class="search-form">
 					<input type="text" name="searchtext" class="searchtext" placeholder="Search here..." autocomplete="off">
 					<input type="submit" name="searchbutton" class="searchbutton" value="&#x1f50d;">
 				</form>
 			</div>
-		</div>
-		<nav>
-			<ul class="nav-list">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="reviews.html">Reviews</a></li>
-				<li><a href="glossary.html">Glossary</a></li>
-				<li class="active"><a href="jobs.html">Jobs</a></li>
-				<li><a href="tutorials.html">Tutorials</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<div class="jobs-section container">
-			<div class="jobs">
-				<div class="section-title">Jobs</div>
-				<div class="job-comparison">
-					<div class="comparison-head">
-						<div>Category</div>
+			<!-- Search Section ends -->
+		</div><!-- Head Section ends -->
+		<nav><!-- Navigation Setion starts -->
+			<ul class="nav-list"><!-- Nav List Starts-->
+				<li><a href="index.html">Home</a></li><!-- List item -->
+				<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+				<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+				<li class="active"><a href="jobs.html">Jobs</a></li><!-- List item -->
+				<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
+			</ul><!-- Nav List Ends-->
+		</nav><!-- NAvigation Setion ends -->
+	</header><!-- Header Setion ends -->
+	<section><!-- Main Setion Starts -->
+		<div class="jobs-section container"><!-- Jobs Whole Section Starts -->
+			<div class="jobs-list-section"><!-- Jobs List Section Starts -->
+				<h2 class="section-title">Jobs</h2>
+				<div class="jobs-list"><!-- Jobs List Starts -->
+					<div class="job scale"><!-- Jobs Starts -->
+						<a href="#">
+							<div class="job-image">
+								<img src="images/job1.jpg" alt="Web Developer"><!-- Jobs Image -->
+							</div>
+							<div class="middle-info">
+								<div class="middle-title">Web Developer</div><!-- Jobs Title -->
+								<div class="middle-author">at ProDev Pvt. Ltd</div><!-- Jobs Company -->
+							</div>
+						</a>
+					</div><!-- Jobs Ends -->
+					<div class="job scale"><!-- Jobs Starts -->
+						<a href="#">
+							<div class="job-image">
+								<img src="images/job2.jpg" alt="Web Designer"><!-- Jobs Image -->
+							</div>
+							<div class="middle-info">
+								<div class="middle-title">Web Designer</div><!-- Jobs Title -->
+								<div class="middle-author">at WebDev Inc.</div><!-- Jobs Company -->
+							</div>
+						</a>
+					</div><!-- Jobs Ends -->
+					<div class="job scale"><!-- Jobs Starts -->
+						<a href="#">
+							<div class="job-image">
+								<img src="images/job3.jpg" alt="Frontend Developer"><!-- Jobs Image -->
+							</div>
+							<div class="middle-info">
+								<div class="middle-title">Frontend Developer</div><!-- Jobs Title -->
+								<div class="middle-author">at Nepal Tech</div><!-- Jobs Company -->
+							</div>
+						</a>
+					</div><!-- Jobs Ends -->
+					<div class="job scale"><!-- Jobs Starts -->
+						<a href="#">
+							<div class="job-image">
+								<img src="images/job4.jpg" alt="Backend Developer"><!-- Jobs Image -->
+							</div>
+							<div class="middle-info">
+								<div class="middle-title">Backend Developer</div><!-- Jobs Title -->
+								<div class="middle-author">at Web Tech Institute</div><!-- Jobs Company -->
+							</div>
+						</a>
+					</div><!-- Jobs Ends -->
+				</div><!-- Jobs List Ends -->
+			</div><!-- Jobs List Section Ends -->
+			<div class="jobs"><!-- Jobs Comparison Section Starts -->
+				<h2 class="section-title">Jobs Comparison</h2>
+				<div class="job-comparison"><!-- Jobs Comparison Starts -->
+					<div class="comparison-head"><!-- Jobs Comparison Head -->
+						<div>Comparison</div>
 						<div>Web Developer</div>
 						<div>Web Designer</div>
 					</div>
-					<div class="job-row">
+					<div class="job-row"><!-- Jobs Comparison Row -->
+						<div>Company</div>
+						<div>ProDev Pvt. Ltd</div>
+						<div>WebDev Inc.</div>
+					</div>
+					<div class="job-row"><!-- Jobs Comparison Row -->
 						<div>Salary</div>
-						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.</div>
-						<div>Data1</div>
+						<div>1,25,000 Rs.</div>
+						<div>1,00,000 Rs.</div>
 					</div>
-					<div class="job-row">
+					<div class="job-row"><!-- Jobs Comparison Row -->
 						<div>Place</div>
-						<div>Data1</div>
-						<div> Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</div>
+						<div>Maitidevi, Kathmandu</div>
+						<div>New Baneshwor, Kathmandu</div>
 					</div>
-					<div class="job-row">
-						<div>Promotion</div>
-						<div>Data1</div>
-						<div> Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur.</div>
+					<div class="job-row"><!-- Jobs Comparison Row -->
+						<div>Degree</div>
+						<div>CSIT / BIT / Engineering</div>
+						<div>CSIT / BIT / Engineering</div>
 					</div>
-					<div class="job-row">
-						<div>Scope</div>
-						<div> Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-						<div>Data1</div>
+					<div class="job-row"><!-- Jobs Comparison Row -->
+						<div>Skills</div>
+						<div>Other than Degree Courses</div>
+						<div>Other than Degree Courses</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="contact-section container">
-			<div class="contact">
-				<div class="section-title">Contact Us</div>
+					<div class="job-row"><!-- Jobs Comparison Row -->
+						<div>Bonus</div>
+						<div>Depends on work</div>
+						<div>Yearly</div>
+					</div>
+					<div class="job-row"><!-- Jobs Comparison Row -->
+						<div>Medical Help</div>
+						<div>Yes</div>
+						<div>Yes</div>
+					</div>
+					<div class="job-row"><!-- Jobs Comparison Row -->
+						<div>Deadline</div>
+						<div>15th June</div>
+						<div>25th August</div>
+					</div>
+				</div><!-- Jobs Comparison Ends -->
+			</div><!-- Jobs Comparison Section Ends -->
+		</div><!-- Jobs Whole Section Ends -->
+		<div class="contact-section container"><!-- Contact Section Starts -->
+			<div class="contact"><!-- Contact Form Starts -->
+				<h2 class="section-title">Contact Us</h2>
 				<div class="contact-form">
 					<form action="jobs.html" method="POST">
-						<div class="contact-field">
+						<div class="contact-field"><!-- Contact Name Starts -->
 							<label>Name</label>
-							<input class="material-input" type="text" name="name" autocomplete="off" onblur="validate(this)" required>
-						</div>
-						<div class="contact-field">
+							<input class="site-input" type="text" name="name" autocomplete="off" onblur="validate(this)" required><!-- Contact Name Input -->
+						</div><!-- Contact Name Ends -->
+						<div class="contact-field"><!-- Contact Email Starts -->
 							<label>Email</label>
-							<input class="material-input" type="email" name="email" autocomplete="off" onblur="validate(this)" required>
-						</div>
-						<div class="contact-field">
+							<input class="site-input" type="email" name="email" autocomplete="off" onblur="validate(this)" required><!-- Contact Email Input -->
+						</div><!-- Contact Email Ends -->
+						<div class="contact-field"><!-- Contact Number Starts -->
 							<label>Phone Number</label>
-							<input class="material-input" type="number" name="number" autocomplete="off" onblur="validate(this)" required>
-						</div>
-						<div class="contact-field">
+							<input class="site-input" type="number" name="number" autocomplete="off" onblur="validate(this)" required><!-- Contact Number Input -->
+						</div><!-- Contact Number Ends -->
+						<div class="contact-field"><!-- Contact Message Starts -->
 							<label>Message</label>
-							<textarea class="material-input" name="message" rows="5" onblur="validate(this)" required></textarea>
-						</div>
-						<div class="contact-field">
-							<input class="material-button" type="submit" name="submit" value="Send">
-						</div>
+							<textarea class="site-input" name="message" rows="5" onblur="validate(this)" required></textarea><!-- Contact Message Input -->
+						</div><!-- Contact Message Ends -->
+						<div class="contact-field"><!-- Contact Button Starts -->
+							<input class="site-button" type="submit" name="submit" value="Send"><!-- Contact Submit Input -->
+						</div><!-- Contact Button Ends -->
 					</form>
 				</div>
+			</div><!-- Contact Form ends -->
+			<div class="map"><!-- Map Section Starts -->
+				<h2 class="section-title">Find us here</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4152193569153!2d85.3313764847522!3d27.70446342104289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a04496d4b7%3A0xba6ad16c6cb08ecc!2sMaitidevi+chowk!5e0!3m2!1sen!2snp!4v1554041028708!5m2!1sen!2snp" width="600" height="450" allowfullscreen></iframe><!-- Google Maps IFrame  -->
 			</div>
-			<div class="map">
-				<div class="section-title">Find us here</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4152193569153!2d85.3313764847522!3d27.70446342104289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a04496d4b7%3A0xba6ad16c6cb08ecc!2sMaitidevi+chowk!5e0!3m2!1sen!2snp!4v1554041028708!5m2!1sen!2snp" width="600" height="450" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</section>
-	<footer>
+		</div><!-- Contact Section Starts -->
+	</section><!-- Main Setion ends -->
+	<footer><!-- Footer Section starts -->
 		<div class="footer-info">
-			<div class="footer-logo" title="The Nami Times">The Nami Times</div>
-			<div class="copyright">Copyright © <span id="copyright-year"></span> The Nami Times</div>
+			<div class="footer-logo" title="The Nami Times">The Nami Times</div><!-- Logo -->
+			<div class="copyright">Copyright © <span id="copyright-year"></span> The Nami Times</div><!-- Copyright -->
 		</div>
-		<div class="footer-list">
+		<div class="footer-list"><!-- Footer list starts -->
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="reviews.html">Reviews</a></li>
-				<li><a href="glossary.html">Glossary</a></li>
-				<li><a href="jobs.html">Jobs</a></li>
-				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="index.html">Home</a></li> <!-- List item -->
+				<li><a href="reviews.html">Reviews</a></li><!-- List item -->
+				<li><a href="glossary.html">Glossary</a></li><!-- List item -->
+				<li><a href="jobs.html">Jobs</a></li><!-- List item -->
+				<li><a href="tutorials.html">Tutorials</a></li><!-- List item -->
 			</ul>
-		</div>
-	</footer>
-	<script type="text/javascript" src="script.js"></script>
-</body>
-</html>
+		</div><!-- Footer list ends -->
+	</footer><!-- Footer Section ends -->
+	<script src="script.js"></script><!-- Main Script of the website -->
+</body><!-- Body Section Ends -->
+</html><!-- Html Ends -->
